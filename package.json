@@ -1,0 +1,14 @@
+{
+  "name": "galath",
+  "version": "1.0.0",
+  "private": true,
+  "description": "XML language for web applications",
+  "scripts": {
+    "serve": "http-server -c-1 -o"
+  },
+  "keywords": ["xml", "language", "declarative"],
+  "author": "",
+  "license": "MIT",
+  "workspaces": ["packages/*"],
+  "type": "module"
+}
