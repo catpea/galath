@@ -4,11 +4,26 @@
   "private": true,
   "description": "XML language for web applications",
   "scripts": {
+    "save": "git add .; git commit -m 'Updated Release'; npm version patch; npm publish; git push --follow-tags;",
     "serve": "http-server -c-1 -o"
   },
   "keywords": ["xml", "language", "declarative"],
-  "author": "",
-  "license": "MIT",
   "workspaces": ["packages/*"],
-  "type": "module"
+  "type": "module",
+
+  "author": "catpea (https://github.com/catpea)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catpea/odor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/catpea/odor/issues"
+  },
+  "homepage": "https://catpea.github.io/odor",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/catpea"
+  }
+
 }
