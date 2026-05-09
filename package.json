@@ -1,16 +1,21 @@
 {
   "name": "galath",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "XML language for web applications",
   "scripts": {
     "save": "git add .; git commit -m 'Updated Release'; npm version patch; npm publish; git push --follow-tags;",
     "serve": "http-server -c-1 -o"
   },
-  "keywords": ["xml", "language", "declarative"],
-  "workspaces": ["packages/*"],
+  "keywords": [
+    "xml",
+    "language",
+    "declarative"
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
   "type": "module",
-
   "author": "catpea (https://github.com/catpea)",
   "license": "MIT",
   "repository": {
@@ -25,5 +30,4 @@
     "type": "github",
     "url": "https://github.com/sponsors/catpea"
   }
-
 }
