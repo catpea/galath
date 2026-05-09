@@ -19,12 +19,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/catpea/odor.git"
+    "url": "git+https://github.com/catpea/galath.git"
   },
   "bugs": {
-    "url": "https://github.com/catpea/odor/issues"
+    "url": "https://github.com/catpea/galath/issues"
   },
-  "homepage": "https://catpea.github.io/odor",
+  "homepage": "https://catpea.github.io/galath",
   "funding": {
     "type": "github",
     "url": "https://github.com/sponsors/catpea"
