@@ -196,8 +196,8 @@ export function renderingFeature(language) {
 
   // ---------------------------------------------------------------------------
   // <switch on="expr">
-  //   <case value="literal">...</case>
-  //   <case test="expr">...</case>     (alternate: explicit boolean expression)
+  //   <case value="basic">...</case>   value is a plain string, compared literally
+  //   <case test="expr">...</case>     test is a full expression (boolean)
   //   <default>...</default>
   // </switch>
   //
@@ -213,9 +213,8 @@ export function renderingFeature(language) {
     for (const c of cases) {
       let match = false;
       if (c.hasAttribute('value')) {
-        const candidate = language.evaluate(c.getAttribute('value'), instance, local);
-        // String-coerced equality so "2" matches 2 and "true" matches true.
-        match = String(subject) === String(candidate);
+        const candidate = c.getAttribute('value');
+        match = String(subject) === candidate;
       } else if (c.hasAttribute('test')) {
         match = Boolean(language.evaluate(c.getAttribute('test'), instance, local));
       }

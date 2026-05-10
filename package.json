@@ -9,12 +9,25 @@
   "keywords": [
     "xml",
     "language",
-    "declarative"
+    "declarative",
+    "xml",
+    "ui",
+    "web-components"
   ],
   "workspaces": [
     "packages/*"
   ],
-  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./boot": "./src/boot.js",
+    "./morph": "./src/morph.js",
+    "./*": "./src/*.js"
+  },
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "module": "src/index.js",
   "author": "catpea (https://github.com/catpea)",
   "license": "MIT",
   "repository": {
