@@ -4,7 +4,7 @@
   "description": "XML language for web applications",
   "scripts": {
     "save": "git add .; git commit -m 'Updated Release'; npm version patch; npm publish; git push --follow-tags;",
-    "serve": "http-server -c-1 -o"
+    "dev": "http-server -c-1 -o"
   },
   "keywords": [
     "xml",

@@ -20,20 +20,26 @@
 
       <instance>
         <chapters>
-          <chapter id="welcome"     icon="bi-stars"         title="Welcome" />
-          <chapter id="signals"     icon="bi-broadcast"     title="Signals" />
-          <chapter id="instance"    icon="bi-database"      title="Instance Tree" />
-          <chapter id="bindings"    icon="bi-link-45deg"    title="Bindings" />
-          <chapter id="expressions" icon="bi-braces"        title="Expressions" />
-          <chapter id="paths"       icon="bi-signpost-split" title="Paths" />
-          <chapter id="lists"       icon="bi-collection"      title="Lists &amp; Templates" />
-          <chapter id="switch"      icon="bi-sign-turn-right-fill" title="Switch" />
-          <chapter id="commands"    icon="bi-command"         title="Commands" />
-          <chapter id="controller"  icon="bi-person-gear"   title="Controllers" />
-          <chapter id="events"      icon="bi-broadcast-pin" title="XML Events" />
-          <chapter id="behaviors"   icon="bi-puzzle"        title="Behaviors" />
-          <chapter id="components"  icon="bi-boxes"         title="Components" />
-          <chapter id="imports"     icon="bi-arrow-down-up" title="Imports" />
+          <chapter id="welcome"     icon="bi-stars"                  title="Welcome" />
+          <chapter id="signals"     icon="bi-broadcast"              title="Signals" />
+          <chapter id="instance"    icon="bi-database"               title="Instance Tree" />
+          <chapter id="bindings"    icon="bi-link-45deg"             title="Bindings" />
+          <chapter id="expressions" icon="bi-braces"                 title="Expressions" />
+          <chapter id="paths"       icon="bi-signpost-split"         title="Paths" />
+          <chapter id="lists"       icon="bi-collection"             title="Lists &amp; Templates" />
+          <chapter id="switch"      icon="bi-sign-turn-right-fill"   title="Switch" />
+          <chapter id="commands"    icon="bi-command"                title="Commands" />
+          <chapter id="controller"  icon="bi-person-gear"            title="Controllers" />
+          <chapter id="events"      icon="bi-broadcast-pin"          title="XML Events" />
+          <chapter id="behaviors"   icon="bi-puzzle"                 title="Behaviors" />
+          <chapter id="components"  icon="bi-boxes"                  title="Components" />
+          <chapter id="slots"       icon="bi-layout-split"           title="Slots" />
+          <chapter id="emit"        icon="bi-megaphone"              title="Emit Events" />
+          <chapter id="lifecycle"   icon="bi-arrow-clockwise"        title="Lifecycle" />
+          <chapter id="persistence" icon="bi-hdd"                    title="Persistence" />
+          <chapter id="async"       icon="bi-cloud-download"         title="Async (fetch)" />
+          <chapter id="validation"  icon="bi-shield-check"           title="Validation" />
+          <chapter id="imports"     icon="bi-arrow-down-up"          title="Imports" />
         </chapters>
       </instance>
     </model>
@@ -204,6 +210,12 @@
               <case value="events"     ><x-chapter-events      /></case>
               <case value="behaviors"  ><x-chapter-behaviors   /></case>
               <case value="components" ><x-chapter-components  /></case>
+              <case value="slots"      ><x-chapter-slots       /></case>
+              <case value="emit"       ><x-chapter-emit        /></case>
+              <case value="lifecycle"  ><x-chapter-lifecycle   /></case>
+              <case value="persistence"><x-chapter-persistence /></case>
+              <case value="async"      ><x-chapter-async       /></case>
+              <case value="validation" ><x-chapter-validation  /></case>
               <case value="imports"    ><x-chapter-imports     /></case>
             </switch>
           </section>
